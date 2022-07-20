@@ -1,0 +1,78 @@
+
+.bot{
+    grid-area: b;
+}
+
+.mainBot {
+    display: flex;
+    justify-content: center;
+}
+
+
+.blockComponent {
+
+    display: grid;
+
+    overflow-y: auto;
+
+    grid-template-columns: repeat(5,1fr);
+
+
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-left: -20px;
+    background: rgb(80, 80, 81,0.4);
+
+    box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.3),
+    1px 2px 4px 0px rgba(0,255,255,0.3),
+    2px 4px 8px 0px rgba(0,255,255,0.3),
+    2px 4px 16px 0px rgba(0,255,255,0.3);
+    height: 160px;
+    width: 390px;
+
+
+
+}
+
+.squareBot {
+    display: flex;
+    background: #4496f0;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    height: 60px;
+    width: 60px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: rgba(40, 94, 221, 0.65);
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    /*border-radius: 9em;*/
+    box-shadow: inset 1px 1px 10px #0b396e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #68cec7;
+}
+
+.list {
+    list-style-type: none;
+}

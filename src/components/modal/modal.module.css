@@ -1,0 +1,147 @@
+
+.modalContent {
+    display: grid;
+    Width: 1200px;
+    Height: 490px;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -600px;
+    margin-top: -250px;
+
+    /* interface/modal-bg */
+
+    background: #8034be;
+    /* /interface/modal edge */
+
+
+    border-radius: 40px;
+
+
+    -webkit-box-shadow: 0px 0px 64px 17px rgba(128, 52, 190, 0.7);
+    -moz-box-shadow: 0px 0px 64px 17px rgba(128, 52, 190, 0.7);
+    box-shadow: 0px 0px 64px 17px rgba(128, 52, 190, 0.7);
+
+
+    overflow: hidden;
+
+    grid-template-rows: 5fr 2fr;
+
+
+}
+
+.txtModal {
+    display: grid;
+    padding-top: 140px;
+    justify-items: left;
+    padding-left: 15px;
+
+    font-size: 40px;
+
+
+    color: #29FBEE;
+    -webkit-text-stroke: 1px #110203;
+
+
+}
+
+
+.txtModalIn {
+
+    padding: 30px 24px 24px 24px;
+}
+
+.buttModalIn{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+
+}
+
+a.button24 {
+    display: inline-block;
+    color: #29FBEE;
+    font-size: 40px;
+    -webkit-text-stroke: 1px #110203;
+    text-decoration: none;
+    padding: .2em 1em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #742eaf #000 #6113a1;
+    border-radius: 10px;
+    background: linear-gradient(#752eaf, #761ab7) #6213a1;
+    transition: 0.2s;
+
+
+
+
+}
+a.button24:hover { background: linear-gradient(#702798, #771da9) #6f139d; }
+a.button24:active { background: linear-gradient(#59327b, #64258c) #4a0f73; }
+
+
+
+
+
+
+/*<p className={styles.text}>1 строка</p>*/
+/*                                     <p className={styles.text}>2 строка</p>*/
+/*                                                                          <p className={styles.text}>3 строка</p>*/
+/*                                                                                                               <p className={styles.text}>4 строка</p>*/
+/*.text {*/
+/*    --duration: 3s;*/
+
+/*    width: 8ch;*/
+/*    overflow: hidden;*/
+
+/*    font: 22px Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;*/
+/*    white-space: nowrap;*/
+
+/*    animation: typing var(--duration) steps(8, end) backwards;*/
+/*}*/
+
+/*.text:nth-child(2) {*/
+/*    animation-delay: var(--duration);*/
+/*}*/
+
+/*.text:nth-child(3) {*/
+/*    animation-delay: calc(var(--duration) * 2);*/
+/*}*/
+
+/*.text:nth-child(4) {*/
+/*    animation-delay: calc(var(--duration) * 3);*/
+/*}*/
+
+/*@keyframes typing {*/
+/*    0% {*/
+/*        width: 0;*/
+/*    }*/
+/*}*/
+
+.text
+{
+
+    font-size: 40px;
+
+
+    color: #29FBEE;
+    -webkit-text-stroke: 1px #110203;
+    width: 1100px;
+
+    font-family: 'Marck Script', cursive;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+@keyframes type{
+    from { width: 0; }
+}
+@-webkit-keyframes type{
+    from { width: 0; }
+}

@@ -1,0 +1,112 @@
+
+
+.background {
+
+    display: grid;
+
+    background-size: cover;
+    background: url(../../additionally/picture/other/Fragment_fona-07-07.png);
+
+    width: 100%;
+    height: 100%;
+
+    grid-template-areas:
+    "h h h h"
+    "l m m r"
+    "b b b b";
+
+}
+
+.head {
+    grid-area: h;
+    padding-top: 50px;
+    width: 60px;
+}
+
+.left {
+    grid-area: l;
+    width: 500px;
+}
+.right{
+    grid-area: r;
+    width: 500px;
+    margin-left: 15px;
+}
+
+
+
+.bot{
+    grid-area: b;
+}
+
+.mainBot {
+    display: flex;
+    justify-content: center;
+}
+
+
+.blockComponent {
+
+    display: grid;
+
+    overflow-y: auto;
+
+    grid-template-columns: repeat(5,1fr);
+
+
+    margin-top: 20px;
+    margin-bottom: 70px;
+    margin-left: -20px;
+
+
+    background: rgba(34, 217, 208, 0.5);
+    height: 160px;
+    width: 390px;
+
+
+
+}
+
+.squareBot {
+    display: flex;
+    background: #4496f0;
+    border-radius: 1px;
+    margin: 8px;
+    height: 60px;
+    width: 60px;
+
+
+}
+
+.squareBot2 {
+    display: flex;
+    background: #f04444;
+    border-radius: 1px;
+    margin: 8px;
+    height: 60px;
+    width: 60px;
+
+
+}
+
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: rgba(4, 71, 229, 0.2);
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    /*border-radius: 9em;*/
+    box-shadow: inset 1px 1px 10px #0b3c68;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #121f3c;
+}
+
+.list {
+    list-style-type: none;
+}
